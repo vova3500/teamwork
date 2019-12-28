@@ -1,0 +1,197 @@
+body {
+	padding: 0;
+	margin: 0;
+	font-family: "Montserrat", sans-serif;
+}
+
+.k_video {
+	width: 100%;
+	background-image: url(../img/k_back.jpg);
+	background-size: cover;
+	height: 430px;
+	padding-top: 150px;
+	text-align: center;
+}
+
+.k_video_text1 {
+	margin-top: 30px;
+	color: white;
+	font-size: 25px
+}
+
+.k_video_text2 {
+	width: 35%;
+	margin: auto;
+	margin-top: 15px;
+	color: white;
+}
+
+.k_video_time {
+	color: #c1ad96;
+	margin-top: 25px;
+}
+
+.k_mobile_block {
+	width: 1230px;
+	display: flex;
+	justify-content: space-around;
+	margin: auto;
+	background: #fbfaf8;
+}
+
+.k_hand {
+	width: 50%;
+}
+
+.k_mobile_text {
+	width: 50%;
+	margin-top: 220px;
+}
+
+.k_mobile_text1 {
+	color: #555555;
+	font-size: 25px;
+	margin-bottom: 20px;
+}
+
+.k_mobile_text2 {
+	color: #9d9b9b;
+	margin-bottom: 20px;
+	font-size: 20px;
+}
+
+.k_mobile_text3 {
+	color: #9d9b9b;
+}
+
+.k_mob_arrows {
+	display: flex;
+	margin-bottom: 25px;
+	font-size: 20px;
+}
+
+.ar {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.ar_text {
+	margin-top: 10px;
+}
+
+@media screen and (min-width: 1024px) {
+	.k_mobile_block {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.k_video_text2 {
+		width: 90%;
+	}
+
+	.k_mobile_block {
+		margin: auto;
+		width: 100%;
+		display: flex;
+		justify-content: space-around;
+	}
+
+	.k_hand {
+		width: 49%
+	}
+
+	.k_mobile_text {
+		width: 49%;
+		margin-top: 150px;
+	}
+}
+@media screen and (max-width: 768px) {
+	.k_video {
+		width: 100%;
+	}
+
+	.k_video_text2 {
+		width: 90%;
+	}
+
+	.k_mobile_block {
+		margin-top: 20px;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+	}
+	.k_hand {
+		order: 2;
+		width: 100%
+	}
+	.k_mobile_text {
+		order: 1;
+		width: 90%;
+		margin-top: 40px;
+		margin: auto;
+	}
+	.k_mobile_text3 {
+		width: 70%;
+		margin: auto;
+	}
+}
+
+@media screen and (max-width: 568px) {
+	.k_video_text2 {
+		width: 90%;
+	}
+
+	.k_mobile_block {
+		margin: auto;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.k_mobile_text {
+		margin: auto;
+		width: 90%;
+		margin-top: 20px;
+		order: 10;
+	}
+
+	.k_hand {
+		margin-top: -30px;
+		order: 22;
+		width: 90%;
+	}
+
+	.ar>img {
+		margin-top: 10px;
+	}
+}
+
+@media screen and (max-width: 320px) {
+	.k_mobile_block {
+		margin: auto;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.k_mobile_text {
+		margin: auto;
+		width: 90%;
+		margin-top: 20px;
+		order: 10;
+	}
+
+	.k_hand {
+		margin-top: -30px;
+		order: 22;
+		width: 90%;
+	}
+
+	.ar>img {
+		margin-top: 10px;
+	}
+}

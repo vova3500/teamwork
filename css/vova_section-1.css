@@ -1,0 +1,147 @@
+.section-1 {
+    max-width: 1230px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.section-1-block {
+    width: 266px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 80px;
+    padding-bottom: 80px;
+    cursor: pointer;
+}
+
+.section-1-block:hover h1 {
+    color: #c7b299;
+    transition: 0.5s;
+}
+
+.section-1-block:hover .section-1-block-line{
+    background: #c7b299;
+    transition: 0.5s;
+}
+.section-1-block path{
+    transition: 0.5s;
+    fill: black;
+}
+.section-1-block:hover path{
+    transition: 0.5s;
+    fill: #c7b299;
+}
+
+.section-1-block h1 {
+    font-family: "Raleway", sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    margin: 0;
+    margin-top: 29px;
+    margin-bottom: 19px;
+    transition: 0.5s;
+}
+
+.section-1-block p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+    margin: 0;
+}
+
+.section-1-block-line {
+    width: 70px;
+    height: 3px;
+    background-color: #f1eee9;
+    margin-top: 30px;
+    transition: 0.5s;
+}
+
+@media screen and (max-width: 1024px) {
+    .section-1 {
+        max-width: 960px;
+    }
+
+    .section-1-block {
+        width: 266px;
+    }
+
+    .section-1-block h1 {
+        font-size: 18px;
+    }
+
+    .section-1-block p {
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    .section-1-block-line {
+        width: 60px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .section-1 {
+        max-width: 720px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section-1-block {
+        width: 266px;
+        margin-top: 40px;
+        padding-bottom: 0px;
+    }
+
+    .section-1-block h1 {
+        font-size: 22px;
+    }
+
+    .section-1-block p {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .section-1-block-line {
+        width: 60px;
+    }
+}
+
+@media screen and (max-width: 568px) {
+    .section-1 {
+        width: calc(100% - 60px);
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .section-1-block {
+        width: 220px;
+        margin-top: 40px;
+        padding-bottom: 0px;
+    }
+
+    .section-1-block h1 {
+        font-size: 20px;
+    }
+
+    .section-1-block p {
+        font-size: 12px;
+        line-height: 17px;
+    }
+
+    .section-1-block-line {
+        width: 60px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .section-1 {
+        width: calc(100% - 30px);
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
