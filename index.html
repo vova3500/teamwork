@@ -17,7 +17,9 @@
 
 </head>
 
-<body>
+<body><div class="preloader" id="preloader">
+      <div class="loader"></div>
+    </div>
 	<!-- Start Header Vova -->
 	<header class="header" id="home">
 		<div class="nav-logo">
@@ -591,6 +593,15 @@
 			</div>
 		</div>
 	</div>
+	<script>
+		document.body.onload = function() {
+  setTimeout(() => {
+    var preloader = document.getElementById("preloader");
+    preloader.style.opacity = "0";
+    preloader.style.zIndex = "-1";
+  }, 1000);
+};
+	</script>
 </body>
 
 </html>
